@@ -1,0 +1,4 @@
+<%= @task.details %>
+<%= link_to('Update task', edit_task_path) %>
+<%= link_to('Delete task', task_path(@task), method: :delete, data: { confirm: "Es-tu sur ... ?" }) %>
+<%= link_to('Back to tasks', tasks_path) %>
